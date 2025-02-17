@@ -4,6 +4,9 @@
 #include <string>
 #include <fstream>
 #include <thread>
+#include <memory>  // std::shared_ptr‚Ì‚½‚ß‚É’Ç‰Á
+#include <vector>  // std::vector‚Ì‚½‚ß‚É’Ç‰Á
+#include <string>  // std::string‚Ì‚½‚ß‚É’Ç‰Á
 
 #include "sample_log.h"
 #include "Tokenizer.hpp"

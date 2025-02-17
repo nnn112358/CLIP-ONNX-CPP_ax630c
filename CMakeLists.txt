@@ -1,3 +1,12 @@
+
+
+# クロスコンパイル設定
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR aarch64)
+set(CMAKE_C_COMPILER aarch64-linux-gnu-gcc)
+set(CMAKE_CXX_COMPILER aarch64-linux-gnu-g++)
+
+
 # set cmake_install_prefix path
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
     set(CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install" CACHE PATH "Installation Directory")
@@ -14,6 +23,8 @@ endif()
 if(NOT BSP_MSP_DIR)
     set(BSP_MSP_DIR ${CMAKE_SOURCE_DIR}/axpi_pro_bsp_sdk/msp/out)
 endif()
+
+set(BSP_MSP_DIR /opt/ax620q_bsp_sdk/msp/out/arm64_glibc)
 
 message(STATUS "BSP_MSP_DIR = ${BSP_MSP_DIR}")
 
@@ -50,7 +61,7 @@ include_directories(${BSP_MSP_DIR}/include)
 link_directories(${BSP_MSP_DIR}/lib)
 
 option(BUILD_WITH_AX650 "build with ax650" OFF)
-option(BUILD_WITH_AX620E "build with ax620e" OFF)
+option(BUILD_WITH_AX620E "build with ax620e" ON)
 option(BUILD_VIDEO_DEMO "build video demo" OFF)
 
 if(BUILD_WITH_AX620E)
