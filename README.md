@@ -1,5 +1,25 @@
 # CLIP
 
+## ax630c build
+```
+$ git clone https://github.com/nnn112358/CLIP-ONNX-CPP_ax630c
+$ mkdir third_party
+$ cd third_patry
+$ https://github.com/ZHEQIUSHUI/SAM-ONNX-AX650-CPP/releases/download/ax_models/onnxruntime-aarch64-none-gnu-1.16.0.zip
+$ unzip onnxruntime-aarch64-none-gnu-1.16.0.zip
+$ https://github.com/ZHEQIUSHUI/SAM-ONNX-AX650-CPP/releases/download/ax_models/libopencv-4.6-aarch64-none.zip
+$ unzip onnxruntime-aarch64-none-gnu-1.16.0.zip
+$ git clone https://github.com/AXERA-TECH/ax620e_bsp_sdk
+$ cp -r ./ax620e_bsp_sdk /opt/
+$ cd ..
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+```
+
+
+
 
 https://github.com/AXERA-TECH/CLIP-ONNX-AX650-CPP/assets/46700201/7fefc9dd-9168-462d-bae9-bb013731f5c6
 
