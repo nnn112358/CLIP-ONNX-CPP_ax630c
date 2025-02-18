@@ -16,10 +16,11 @@ $ cd build
 $ cmake ..
 $ make
 ```
+
 ```
 $ls
-images  main_old  text_bin.txt       text_feat
-image_encoder.axmodel  main    text.txt  text_encoder.onnx  vocab.txt
+images   text_bin.txt       text_feat
+image_encoder.axmodel  main    text.txt  vocab.txt
 ```
 
 ```
