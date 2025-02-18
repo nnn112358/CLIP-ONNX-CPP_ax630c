@@ -16,6 +16,27 @@ $ cd build
 $ cmake ..
 $ make
 ```
+```
+$ls
+images  main_old  text_bin.txt       text_feat
+image_encoder.axmodel  main    text.txt  text_encoder.onnx  vocab.txt
+```
+
+```
+./main --ienc=image_encoder.axmodel --image=images/bird.jpg --language=0  --text=text_bin.txt --vocab=vocab.txt
+```
+![image](https://github.com/user-attachments/assets/66bb7639-4f84-43fc-894f-ed0989283a02)
+
+```
+./main --ienc=image_encoder.axmodel --image=images/cat.jpg --language=0  --text=text_bin.txt --vocab=vocab.txt
+```
+
+![image](https://github.com/user-attachments/assets/6a470aaf-faa2-4eee-86b0-cd442051c930)
+
+```
+./main --ienc=image_encoder.axmodel --image=images/dog-chai.jpg --language=0  --text=text_bin.txt --vocab=vocab.txt
+Trace/breakpoint trap (core dumped)
+```
 
 
 
